@@ -16,4 +16,4 @@ Maven 依赖中添加：
 
 ## 示例 ##
 
-见 `msf-sample-dubbo` 模块
+见 `msf-samples-dubbo` 模块
