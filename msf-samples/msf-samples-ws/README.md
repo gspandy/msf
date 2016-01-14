@@ -38,3 +38,6 @@
                     userService.addUser(name,password,addressList);
                 }
             }
+4. 测试WebService WSDL
+
+            http://localhost:9090/ws/UserService?wsdl
