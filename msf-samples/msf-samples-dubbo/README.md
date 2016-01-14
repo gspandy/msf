@@ -1,5 +1,5 @@
 # The msf sample dubbo module #
-这个模块是msf框架实现集成dubbo功能的例子，其中包括服务端（provider）和客户端（consumer）
+这个模块是msf框架实现集成`dubbo`功能的例子，其中包括服务端（provider）和客户端（consumer）
 
 
 ## 使用说明 ##

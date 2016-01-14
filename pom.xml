@@ -55,6 +55,11 @@
                 <artifactId>msf-dubbo-starter</artifactId>
                 <version>1.0</version>
             </dependency>
+            <dependency>
+                <groupId>cn.com.git.msf</groupId>
+                <artifactId>msf-ws-starter</artifactId>
+                <version>1.0</version>
+            </dependency>
         </dependencies>
     </dependencyManagement>
 

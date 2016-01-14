@@ -15,6 +15,7 @@
     <description>The samples module of msf project</description>
     <modules>
         <module>msf-samples-dubbo</module>
+        <module>msf-samples-ws</module>
     </modules>
 
 
