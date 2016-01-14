@@ -21,7 +21,7 @@
             msf.ws.server.baseAddress = http://localhost:9090/ws/
 
 3. 发布服务类,依赖JAX-WS注解定义接口。
-
+<!--lang:java-->
             @Component
             @WebService(serviceName="UserService")
             public class UserServiceJAXWS {
