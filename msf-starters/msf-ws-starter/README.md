@@ -9,10 +9,6 @@
                 <groupId>cn.com.git.msf</groupId>
                 <artifactId>msf-ws-starter</artifactId>
             </dependency>
-            <dependency>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-starter</artifactId>
-            </dependency>
 
 2. 配置属性文件 application.propertiese
 

@@ -9,10 +9,6 @@ Maven 依赖中添加：
                 <groupId>cn.com.git.msf</groupId>
                 <artifactId>msf-dubbo-starter</artifactId>
             </dependency>
-            <dependency>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-starter</artifactId>
-            </dependency>
 
 ## 示例 ##
 

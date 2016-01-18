@@ -3,23 +3,21 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
-        <artifactId>msf</artifactId>
+        <artifactId>msf-samples</artifactId>
         <groupId>cn.com.git.msf</groupId>
         <version>1.0</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>msf-starters</artifactId>
-    <packaging>pom</packaging>
+    <artifactId>msf-samples-schedule</artifactId>
     <name>${project.artifactId}</name>
-    <description>The starters module of msf project</description>
+    <description>The schedule sample module of msf project</description>
 
-    <modules>
-
-        <module>msf-dubbo-starter</module>
-        <module>msf-ws-starter</module>
-        <module>msf-schedule-starter</module>
-    </modules>
-
+    <dependencies>
+        <dependency>
+            <groupId>cn.com.git.msf</groupId>
+            <artifactId>msf-schedule-starter</artifactId>
+        </dependency>
+    </dependencies>
 
 </project>

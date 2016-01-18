@@ -16,6 +16,7 @@
     <modules>
         <module>msf-samples-dubbo</module>
         <module>msf-samples-ws</module>
+        <module>msf-samples-schedule</module>
     </modules>
 
 

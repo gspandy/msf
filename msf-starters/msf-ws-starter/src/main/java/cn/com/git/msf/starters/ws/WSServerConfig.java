@@ -31,7 +31,7 @@ public class WSServerConfig {
         SimpleJaxWsServiceExporter simpleJaxWsServiceExporter = new SimpleJaxWsServiceExporter();
         simpleJaxWsServiceExporter.setBaseAddress(baseAddress);
         if (baseAddress == null) {
-            logger.error("Not found WebService's baseAddress!");
+            logger.warn("Not found WebService's baseAddress!");
         }
         logger.info("WebService's baseAddress : {}", baseAddress);
         return simpleJaxWsServiceExporter;
