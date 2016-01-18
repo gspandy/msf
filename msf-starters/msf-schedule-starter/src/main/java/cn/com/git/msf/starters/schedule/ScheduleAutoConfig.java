@@ -15,7 +15,7 @@ import org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler;
 @EnableAsync
 @EnableScheduling
 @ConfigurationProperties(prefix = "msf.schedule")
-public class ScheduleConfig {
+public class ScheduleAutoConfig {
 
     private int corePoolSize = 5;
 

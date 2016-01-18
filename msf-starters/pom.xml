@@ -15,7 +15,6 @@
     <description>The starters module of msf project</description>
 
     <modules>
-
         <module>msf-dubbo-starter</module>
         <module>msf-ws-starter</module>
         <module>msf-schedule-starter</module>

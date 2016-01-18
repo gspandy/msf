@@ -12,9 +12,9 @@ import org.springframework.remoting.jaxws.SimpleJaxWsServiceExporter;
  */
 @Configuration
 @ConfigurationProperties(prefix = "msf.ws.server")
-public class WSServerConfig {
+public class WSServerAutoConfig {
 
-    private final static Logger logger = LoggerFactory.getLogger(WSServerConfig.class);
+    private final static Logger logger = LoggerFactory.getLogger(WSServerAutoConfig.class);
 
     private String baseAddress;
 

@@ -8,5 +8,5 @@ import org.springframework.context.annotation.Configuration;
  */
 @Configuration
 @ConfigurationProperties(prefix = "msf.dubbo")
-public class DubboConfig {
+public class DubboAutoConfig {
 }
