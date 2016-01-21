@@ -18,6 +18,7 @@
         <module>msf-dubbo-starter</module>
         <module>msf-ws-starter</module>
         <module>msf-schedule-starter</module>
+        <module>msf-shiro-starter</module>
     </modules>
 
 
