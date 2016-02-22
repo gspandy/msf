@@ -32,7 +32,7 @@ public class WSServerAutoConfig {
         if (properties.getBaseAddress() == null) {
             logger.warn("Not found WebService's baseAddress!");
         }
-        logger.info("WebService's baseAddress : {}", properties.getBaseAddress());
+        logger.info("WebService's baseAddress : {}...✓", properties.getBaseAddress());
         return simpleJaxWsServiceExporter;
     }
 
