@@ -11,7 +11,7 @@
                 <artifactId>msf-ws-starter</artifactId>
             </dependency>
 
-2. 配置属性文件 application.propertiese
+2. 配置属性文件 application.properties
 
             #webservice options
             msf.ws.server.baseAddress = http://localhost:9090/ws/

@@ -3,23 +3,22 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
-        <artifactId>msf</artifactId>
+        <artifactId>msf-samples</artifactId>
         <groupId>cn.com.git.msf</groupId>
         <version>1.0</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>msf-samples</artifactId>
-    <packaging>pom</packaging>
+    <artifactId>msf-samples-auth-stateless</artifactId>
     <name>${project.artifactId}</name>
-    <description>The samples module of msf project</description>
-    <modules>
-        <module>msf-samples-dubbo</module>
-        <module>msf-samples-ws</module>
-        <module>msf-samples-schedule</module>
-        <module>msf-samples-shiro</module>
-        <module>msf-samples-auth-stateless</module>
-    </modules>
+    <description>The auth stateless sample module of msf project</description>
+
+    <dependencies>
+        <dependency>
+            <groupId>cn.com.git.msf</groupId>
+            <artifactId>msf-auth-stateless-starter</artifactId>
+        </dependency>
+    </dependencies>
 
 
 </project>

@@ -11,7 +11,7 @@
                 <artifactId>msf-shiro-starter</artifactId>
             </dependency>
 
-2. 配置属性文件 application.propertiese
+2. 配置属性文件 application.properties
 
             #shiro options
             msf.shiro.realm = cn.com.git.msf.samples.shiro.MyShiroRealm
