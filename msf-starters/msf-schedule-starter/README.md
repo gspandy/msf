@@ -10,7 +10,7 @@
                 <artifactId>msf-schedule-starter</artifactId>
             </dependency>
 
-2. 配置属性文件 application.propertiese
+2. 配置属性文件 application.properties
 
             #schedule options
             msf.schedule.poolSize = 10

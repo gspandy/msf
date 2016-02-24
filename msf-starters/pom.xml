@@ -19,6 +19,7 @@
         <module>msf-ws-starter</module>
         <module>msf-schedule-starter</module>
         <module>msf-shiro-starter</module>
+        <module>msf-auth-stateless-starter</module>
     </modules>
 
 
