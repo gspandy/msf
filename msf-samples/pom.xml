@@ -19,6 +19,7 @@
         <module>msf-samples-schedule</module>
         <module>msf-samples-shiro</module>
         <module>msf-samples-auth-stateless</module>
+        <module>msf-samples-redis-cluster</module>
     </modules>
 
 

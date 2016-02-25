@@ -12,7 +12,7 @@ import org.springframework.context.ApplicationContext;
 public class DubboClientApplication {
 
     public static void main(String[] args){
-        ApplicationContext ctx =new SpringApplicationBuilder(DubboClientApplication.class).run(args);
+        ApplicationContext ctx = new SpringApplicationBuilder(DubboClientApplication.class).run(args);
         HelloService helloService = (HelloService)ctx.getBean("helloService"); // 获取远程服务代理
         String hello = helloService.sayHello("world"); // 执行远程方法
         System.out.println(hello);

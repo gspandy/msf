@@ -20,6 +20,7 @@
         <module>msf-schedule-starter</module>
         <module>msf-shiro-starter</module>
         <module>msf-auth-stateless-starter</module>
+        <module>msf-redis-cluster-starter</module>
     </modules>
 
 
