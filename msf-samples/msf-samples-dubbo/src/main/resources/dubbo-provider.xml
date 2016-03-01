@@ -9,7 +9,7 @@
 
     <dubbo:application name="msf-samples-dubbo-server"/>
 
-    <dubbo:registry address="${msf.dubbo.zookeeper.address}" timeout="100000"/>
+    <dubbo:registry address="${msf.dubbo.registry.address}" timeout="100000"/>
 
 
     <dubbo:service interface="cn.com.git.msf.samples.dubbo.service.HelloService" ref="helloservice" timeout="2000"/>
