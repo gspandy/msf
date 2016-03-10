@@ -20,6 +20,7 @@
         <module>msf-samples-shiro</module>
         <module>msf-samples-auth-stateless</module>
         <module>msf-samples-redis-cluster</module>
+        <module>msf-samples-third-datasource</module>
     </modules>
 
 

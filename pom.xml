@@ -23,7 +23,7 @@
 
     <properties>
         <zkclient.version>0.7</zkclient.version>
-        <dubbo.version>2.5.3</dubbo.version>
+        <dubbo.version>2.8.4</dubbo.version>
         <ojdbc6.version>11.2.0.3</ojdbc6.version>
         <jedis.version>2.7.3</jedis.version>
         <shiro.version>1.2.3</shiro.version>
@@ -47,7 +47,7 @@
                 <version>${zkclient.version}</version>
             </dependency>
             <dependency>
-                <groupId>com.alibaba</groupId>
+                <groupId>cn.com.htsc.dubbox</groupId>
                 <artifactId>dubbo</artifactId>
                 <version>${dubbo.version}</version>
             </dependency>
@@ -100,6 +100,11 @@
             <dependency>
                 <groupId>cn.com.git.msf</groupId>
                 <artifactId>msf-redis-cluster-starter</artifactId>
+                <version>1.0</version>
+            </dependency>
+            <dependency>
+                <groupId>cn.com.git.msf</groupId>
+                <artifactId>msf-third-datasource-starter</artifactId>
                 <version>1.0</version>
             </dependency>
         </dependencies>
