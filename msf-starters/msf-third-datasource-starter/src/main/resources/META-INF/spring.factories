@@ -1,3 +1,0 @@
-# Auto Configure
-org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
-cn.com.git.msf.starters.third.datasource.ThirdDataSourceAutoConfig
