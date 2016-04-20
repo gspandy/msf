@@ -21,7 +21,6 @@
         <module>msf-shiro-starter</module>
         <module>msf-auth-stateless-starter</module>
         <module>msf-redis-cluster-starter</module>
-        <module>msf-third-datasource-starter</module>
     </modules>
 
 

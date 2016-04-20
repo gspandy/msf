@@ -102,17 +102,12 @@
                 <artifactId>msf-redis-cluster-starter</artifactId>
                 <version>1.0</version>
             </dependency>
-            <dependency>
-                <groupId>cn.com.git.msf</groupId>
-                <artifactId>msf-third-datasource-starter</artifactId>
-                <version>1.0</version>
-            </dependency>
         </dependencies>
     </dependencyManagement>
 
     <distributionManagement>
         <repository>
-            <id>releases</id>
+            <id>nexus-releases</id>
             <url>http://192.168.55.124:8081/content/repositories/releases</url>
         </repository>
     </distributionManagement>
