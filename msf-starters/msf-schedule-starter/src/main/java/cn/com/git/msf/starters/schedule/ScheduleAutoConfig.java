@@ -35,7 +35,8 @@ public class ScheduleAutoConfig {
     @Bean
     @ConditionalOnMissingBean
     public ThreadPoolTaskScheduler taskScheduler() {
-        ThreadPoolTaskScheduler taskScheduler = new ThreadPoolTaskScheduler();
+        LockThreadPoolTaskScheduler taskScheduler = new LockThreadPoolTaskScheduler();
+        taskScheduler.setLockKeyPerfix(properties.getLockKeyPerfix());
         taskScheduler.setPoolSize(properties.getPoolSize());
         return taskScheduler;
     }

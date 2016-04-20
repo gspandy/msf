@@ -25,6 +25,7 @@ Maven 依赖中添加：
                 }
 
                 @Scheduled(cron = "0 22 11 ? * *"  ) //每天上午11点22执行
+                @DistributedLock(period=PERIOD.DAY) //支持分布式锁
                 public void fixTimeExecution() {
                     System.out.println("在指定时间 " + dateFormat.format(new Date()) + "执行");
                 }

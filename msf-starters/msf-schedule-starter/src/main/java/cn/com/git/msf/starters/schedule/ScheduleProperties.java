@@ -7,6 +7,9 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
  */
 @ConfigurationProperties(prefix = "msf.schedule")
 public class ScheduleProperties {
+
+    private String lockKeyPerfix = "msf:lock";
+
     private int corePoolSize = 5;
 
     private int maxPoolSize = 10;
@@ -14,6 +17,14 @@ public class ScheduleProperties {
     private int queueCapacity = 25;
 
     private int poolSize = 10;
+
+    public String getLockKeyPerfix() {
+        return lockKeyPerfix;
+    }
+
+    public void setLockKeyPerfix(String lockKeyPerfix) {
+        this.lockKeyPerfix = lockKeyPerfix;
+    }
 
     public int getCorePoolSize() {
         return corePoolSize;
