@@ -39,3 +39,6 @@ Maven 依赖中添加：
             msf.schedule.corePoolSize = 5
             msf.schedule.maxPoolSize = 10
             msf.schedule.queueCapacity = 25
+
+            #分布式锁Redis key 前缀
+            msf.schedule.lockKeyPerfix = kf070:lock
