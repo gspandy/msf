@@ -14,5 +14,5 @@ import java.lang.annotation.*;
 public @interface DistributedLock {
     PERIOD period() default PERIOD.DAY;
 
-    boolean isOverRelease() default false;// task is over,release lock
+    boolean release() default false;// task is over,release lock
 }

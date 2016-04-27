@@ -17,7 +17,7 @@ public class TaskDemo {
     private static final SimpleDateFormat dateFormat = new SimpleDateFormat("HH:mm:ss");
 
     @Scheduled(fixedRate = 5000) //每五秒执行一次
-    @DistributedLock(period = PERIOD.MONTH, isOverRelease = true)
+    @DistributedLock(period = PERIOD.MONTH, release = true)
     public void reportCurrentTime() {
         System.out.println("每隔五秒执行一次 " + dateFormat.format(new Date()));
     }

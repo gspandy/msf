@@ -66,7 +66,7 @@ public class LockThreadPoolTaskScheduler extends ThreadPoolTaskScheduler {
                 if (distrbutedLock == null) {//没有 DistributedLock 注解
                     task.run();
                 } else {
-                    if (distrbutedLock.isOverRelease()) {//释放锁,按周期-1
+                    if (distrbutedLock.release()) {//释放锁,按周期-1
                         String previousKey = lockKeyPerfix.concat(":")
                                 .concat(scheduledMethodRunnable.getClass().getSimpleName()).concat(":")
                                 .concat(targetMethod.getName()).concat(":")
