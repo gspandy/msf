@@ -75,32 +75,32 @@
             <dependency>
                 <groupId>cn.com.git.msf</groupId>
                 <artifactId>msf-dubbo-starter</artifactId>
-                <version>1.0</version>
+                <version>1.1</version>
             </dependency>
             <dependency>
                 <groupId>cn.com.git.msf</groupId>
                 <artifactId>msf-ws-starter</artifactId>
-                <version>1.0</version>
+                <version>1.1</version>
             </dependency>
             <dependency>
                 <groupId>cn.com.git.msf</groupId>
                 <artifactId>msf-schedule-starter</artifactId>
-                <version>1.0</version>
+                <version>1.1</version>
             </dependency>
             <dependency>
                 <groupId>cn.com.git.msf</groupId>
                 <artifactId>msf-shiro-starter</artifactId>
-                <version>1.0</version>
+                <version>1.1</version>
             </dependency>
             <dependency>
                 <groupId>cn.com.git.msf</groupId>
                 <artifactId>msf-auth-stateless-starter</artifactId>
-                <version>1.0</version>
+                <version>1.1</version>
             </dependency>
             <dependency>
                 <groupId>cn.com.git.msf</groupId>
                 <artifactId>msf-redis-cluster-starter</artifactId>
-                <version>1.0</version>
+                <version>1.1</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
