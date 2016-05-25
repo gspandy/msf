@@ -29,10 +29,6 @@
             </exclusions>
         </dependency>
         <dependency>
-            <groupId>javassist</groupId>
-            <artifactId>javassist</artifactId>
-        </dependency>
-        <dependency>
             <groupId>com.101tec</groupId>
             <artifactId>zkclient</artifactId>
             <exclusions>

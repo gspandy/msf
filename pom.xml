@@ -27,7 +27,7 @@
         <ojdbc6.version>11.2.0.3</ojdbc6.version>
         <jedis.version>2.8.1</jedis.version>
         <shiro.version>1.2.3</shiro.version>
-        <javassist.version>3.8.1.GA</javassist.version>
+
         <commons-codec.version>1.8</commons-codec.version>
         <spring-boot.version>1.3.1.RELEASE</spring-boot.version>
         <java.version>1.6</java.version>
@@ -36,11 +36,7 @@
 
     <dependencyManagement>
         <dependencies>
-            <dependency>
-                <groupId>javassist</groupId>
-                <artifactId>javassist</artifactId>
-                <version>${javassist.version}</version>
-            </dependency>
+
             <dependency>
                 <groupId>com.oracle</groupId>
                 <artifactId>ojdbc6</artifactId>
