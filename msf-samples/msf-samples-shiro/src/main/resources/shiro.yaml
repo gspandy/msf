@@ -1,0 +1,10 @@
+#shiro options
+msf.shiro.realm : cn.com.git.msf.samples.shiro.MyShiroRealm
+msf.shiro.loginUrl : /login
+msf.shiro.successUrl : /success
+msf.shiro.unauthorizedUrl : /403
+msf.shiro.filterChainDefinitions :
+  "/login" : anon
+  "/logout" : logout
+  "/js/**" : anon
+  "/**" : authc

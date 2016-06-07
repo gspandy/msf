@@ -2,12 +2,13 @@ package cn.com.git.msf.starters.shiro;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
 
-import java.util.Map;
+import java.util.LinkedHashMap;
 
 /**
  * Created by serj on 2016/1/20.
  */
-@ConfigurationProperties(prefix = "msf.shiro")
+
+@ConfigurationProperties(locations = "classpath:shiro.yaml", prefix = "msf.shiro")
 public class ShiroProperties {
     /**
      * Custom Realm
@@ -28,7 +29,7 @@ public class ShiroProperties {
     /**
      * filter chain
      */
-    private Map<String, String> filterChainDefinitions;
+    private LinkedHashMap<String, String> filterChainDefinitions;
 
 
     public Class<?> getRealm() {
@@ -63,11 +64,11 @@ public class ShiroProperties {
         this.unauthorizedUrl = unauthorizedUrl;
     }
 
-    public Map<String, String> getFilterChainDefinitions() {
+    public LinkedHashMap<String, String> getFilterChainDefinitions() {
         return filterChainDefinitions;
     }
 
-    public void setFilterChainDefinitions(Map<String, String> filterChainDefinitions) {
+    public void setFilterChainDefinitions(LinkedHashMap<String, String> filterChainDefinitions) {
         this.filterChainDefinitions = filterChainDefinitions;
     }
 }
