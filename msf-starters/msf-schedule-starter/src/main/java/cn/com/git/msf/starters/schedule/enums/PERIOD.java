@@ -5,5 +5,5 @@ package cn.com.git.msf.starters.schedule.enums;
  * @version [版本号, 2016/4/20]
  */
 public enum PERIOD {
-    HOUR, DAY, MONTH, YEAR;
+    MINUTE, HOUR, DAY, MONTH, YEAR;
 }

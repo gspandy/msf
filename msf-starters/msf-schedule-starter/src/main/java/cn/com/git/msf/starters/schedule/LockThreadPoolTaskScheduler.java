@@ -66,17 +66,17 @@ public class LockThreadPoolTaskScheduler extends ThreadPoolTaskScheduler {
                 if (distrbutedLock == null) {//没有 DistributedLock 注解
                     task.run();
                 } else {
-                    if (distrbutedLock.release()) {//释放锁,按周期-1
+                    if (distrbutedLock.release()) {//释放锁,按周期-periodValue
                         String previousKey = lockKeyPerfix.concat(":")
                                 .concat(scheduledMethodRunnable.getClass().getSimpleName()).concat(":")
                                 .concat(targetMethod.getName()).concat(":")
-                                .concat(toDateString(distrbutedLock.period(), true));
+                                .concat(toDateString(distrbutedLock.period(), true, distrbutedLock.periodValue()));
                         jedisCluster.del(previousKey);
                     }
                     String key = lockKeyPerfix.concat(":")
                             .concat(scheduledMethodRunnable.getClass().getSimpleName()).concat(":")
                             .concat(targetMethod.getName()).concat(":")
-                            .concat(toDateString(distrbutedLock.period(), false));
+                            .concat(toDateString(distrbutedLock.period(), false, distrbutedLock.periodValue()));
                     if (jedisCluster.setnx(key, STATUS.RUNNING.toString()) == 1) {//获得锁
                         task.run();
                         jedisCluster.set(key, STATUS.COMPLETED.toString());
@@ -86,26 +86,34 @@ public class LockThreadPoolTaskScheduler extends ThreadPoolTaskScheduler {
         };
     }
 
-    private static String toDateString(PERIOD period, boolean isPrevious) {
+    private static String toDateString(PERIOD period, boolean isPrevious, int periodValue) {
         SimpleDateFormat sdf = new SimpleDateFormat();
         Calendar calendar = Calendar.getInstance();
+        if (period == PERIOD.MINUTE) {
+            sdf.applyPattern("yyyyMMddHHmm");
+            if (isPrevious) calendar.add(Calendar.MINUTE, -periodValue);
+        }
         if (period == PERIOD.HOUR) {
             sdf.applyPattern("yyyyMMddHH");
-            if (isPrevious) calendar.add(Calendar.HOUR, -1);
+            if (isPrevious) calendar.add(Calendar.HOUR, -periodValue);
         }
         if (period == PERIOD.DAY) {
             sdf.applyPattern("yyyyMMdd");
-            if (isPrevious) calendar.add(Calendar.DATE, -1);
+            if (isPrevious) calendar.add(Calendar.DATE, -periodValue);
         }
         if (period == PERIOD.MONTH) {
             sdf.applyPattern("yyyyMM");
-            if (isPrevious) calendar.add(Calendar.MONTH, -1);
+            if (isPrevious) calendar.add(Calendar.MONTH, -periodValue);
         }
         if (period == PERIOD.YEAR) {
             sdf.applyPattern("yyyy");
-            if (isPrevious) calendar.add(Calendar.YEAR, -1);
+            if (isPrevious) calendar.add(Calendar.YEAR, -periodValue);
         }
         return sdf.format(calendar.getTime());
+    }
+
+    public static void main(String[] args) {
+        System.out.println(toDateString(PERIOD.MINUTE, true, 2));
     }
 
 }
