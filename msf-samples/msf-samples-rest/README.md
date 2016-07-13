@@ -13,7 +13,6 @@ Maven 依赖中添加：
 
 
 ## 示例 ##
-
             @AutoWired
             private RestTemplate restTemplate
 
