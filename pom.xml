@@ -103,6 +103,11 @@
                 <artifactId>msf-redis-cluster-starter</artifactId>
                 <version>1.1</version>
             </dependency>
+            <dependency>
+                <groupId>cn.com.git.msf</groupId>
+                <artifactId>msf-rest-starter</artifactId>
+                <version>1.1</version>
+            </dependency>
         </dependencies>
     </dependencyManagement>
 
