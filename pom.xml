@@ -13,7 +13,7 @@
     <groupId>cn.com.git.msf</groupId>
     <artifactId>msf</artifactId>
     <packaging>pom</packaging>
-    <version>1.1</version>
+    <version>1.2-SNAPSHOT</version>
     <name>${project.artifactId}</name>
     <description>The msf project is a micro service framework</description>
     <modules>
@@ -76,37 +76,37 @@
             <dependency>
                 <groupId>cn.com.git.msf</groupId>
                 <artifactId>msf-dubbo-starter</artifactId>
-                <version>1.1</version>
+                <version>${project.version}</version>
             </dependency>
             <dependency>
                 <groupId>cn.com.git.msf</groupId>
                 <artifactId>msf-ws-starter</artifactId>
-                <version>1.1</version>
+                <version>${project.version}</version>
             </dependency>
             <dependency>
                 <groupId>cn.com.git.msf</groupId>
                 <artifactId>msf-schedule-starter</artifactId>
-                <version>1.1</version>
+                <version>${project.version}</version>
             </dependency>
             <dependency>
                 <groupId>cn.com.git.msf</groupId>
                 <artifactId>msf-shiro-starter</artifactId>
-                <version>1.1</version>
+                <version>${project.version}</version>
             </dependency>
             <dependency>
                 <groupId>cn.com.git.msf</groupId>
                 <artifactId>msf-auth-stateless-starter</artifactId>
-                <version>1.1</version>
+                <version>${project.version}</version>
             </dependency>
             <dependency>
                 <groupId>cn.com.git.msf</groupId>
                 <artifactId>msf-redis-cluster-starter</artifactId>
-                <version>1.1</version>
+                <version>${project.version}</version>
             </dependency>
             <dependency>
                 <groupId>cn.com.git.msf</groupId>
                 <artifactId>msf-rest-starter</artifactId>
-                <version>1.1</version>
+                <version>${project.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
@@ -114,8 +114,14 @@
     <distributionManagement>
         <repository>
             <id>nexus-releases</id>
+            <name>Nexus Releases Repository</name>
             <url>http://192.168.55.124:8081/content/repositories/releases</url>
         </repository>
+        <snapshotRepository>
+            <id>nexus-snapshots</id>
+            <name>Nexus Snapshots Repository</name>
+            <url>http://192.168.55.124:8081/content/repositories/snapshots</url>
+        </snapshotRepository>
     </distributionManagement>
     <build>
         <plugins>
