@@ -10,7 +10,14 @@ Maven 依赖中添加：
                 <groupId>cn.com.git.msf</groupId>
                 <artifactId>msf-schedule-starter</artifactId>
             </dependency>
-
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter</artifactId>
+            </dependency>
+            <dependency>
+                <groupId>cn.com.git.msf</groupId>
+                <artifactId>msf-redis-cluster-starter</artifactId>
+            </dependency>
 
 ## 定时任务示例 ##
 

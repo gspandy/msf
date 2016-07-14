@@ -6,11 +6,18 @@
 
 Maven 依赖中添加：
 
-            <dependency>
-                <groupId>cn.com.git.msf</groupId>
-                <artifactId>msf-rest-starter</artifactId>
-            </dependency>
-
+                    <dependency>
+                        <groupId>cn.com.git.msf</groupId>
+                        <artifactId>msf-rest-starter</artifactId>
+                    </dependency>
+                    <dependency>
+                        <groupId>org.springframework.boot</groupId>
+                        <artifactId>spring-boot-starter</artifactId>
+                    </dependency>
+                    <dependency>
+                        <groupId>org.springframework</groupId>
+                        <artifactId>spring-web</artifactId>
+                    </dependency>
 
 ## 示例 ##
             @AutoWired

@@ -20,7 +20,6 @@
         <dependency>
             <groupId>javassist</groupId>
             <artifactId>javassist</artifactId>
-            <version>3.8.1.GA</version>
         </dependency>
     </dependencies>
 

@@ -6,10 +6,14 @@
 
 Maven 依赖中添加：
 
-            <dependency>
-                <groupId>cn.com.git.msf</groupId>
-                <artifactId>msf-dubbo-starter</artifactId>
-            </dependency>
+        <dependency>
+            <groupId>cn.com.git.msf</groupId>
+            <artifactId>msf-dubbo-starter</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>javassist</groupId>
+            <artifactId>javassist</artifactId>
+        </dependency>
 
 
 ## 服务端 ##
