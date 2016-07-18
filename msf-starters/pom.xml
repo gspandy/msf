@@ -22,6 +22,7 @@
         <module>msf-auth-stateless-starter</module>
         <module>msf-redis-cluster-starter</module>
         <module>msf-rest-starter</module>
+        <module>msf-aop-log-starter</module>
     </modules>
 
 
