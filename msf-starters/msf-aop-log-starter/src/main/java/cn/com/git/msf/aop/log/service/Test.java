@@ -1,6 +1,6 @@
 package cn.com.git.msf.aop.log.service;
 
-import cn.com.git.msf.aop.log.annotation.Log;
+import cn.com.git.msf.aop.log.annotation.LogAop;
 import org.springframework.stereotype.Service;
 
 /**
@@ -8,7 +8,7 @@ import org.springframework.stereotype.Service;
  * @version [版本号, 2016/7/18]
  */
 @Service
-@Log
+@LogAop
 public class Test {
 
     public void print() {
