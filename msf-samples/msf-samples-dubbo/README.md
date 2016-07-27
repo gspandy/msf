@@ -69,6 +69,6 @@ HelloServiceImpl 服务实现类
 ## 配置文件 ##
 application.properties, Spring Boot的配置文件，添加了 `dubbo.registry.address `参数替换dubbo配置文件中的变量。
 
-dubbo-provider.xml dubbo服务配置文件，具体配置参考[http://http://dubbo.io/User+Guide-zh.htm](http://dubbo.io/User+Guide-zh.htm)
+dubbo-provider.xml dubbo服务配置文件，具体配置参考[http://dubbo.io/User+Guide-zh.htm](http://dubbo.io/User+Guide-zh.htm)
 
-dubbo-consumer.xml dubbo客户端配置文件，具体配置参考[http://http://dubbo.io/User+Guide-zh.htm](http://dubbo.io/User+Guide-zh.htm)
+dubbo-consumer.xml dubbo客户端配置文件，具体配置参考[http://dubbo.io/User+Guide-zh.htm](http://dubbo.io/User+Guide-zh.htm)
