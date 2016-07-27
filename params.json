@@ -1,0 +1,6 @@
+{
+  "name": "Msf",
+  "tagline": "The micro service framework",
+  "body": "# The MSF Project #\r\n这是一个基于Spring Boot的微服务框架\r\n\r\n## 安装说明 ##\r\n\r\n    mvn clean install\r\n\r\n## 使用说明 ##\r\n\r\n类似Spring Boot的 starter parent,在项目的主module直接依赖：\r\n\r\n    <!-- Inherit defaults from msf -->\r\n    <parent>\r\n        <groupId>cn.com.git.msf</groupId>\r\n        <artifactId>msf</artifactId>\r\n        <version>1.0</version>\r\n    </parent>\r\n\r\n",
+  "note": "Don't delete this file! It's used internally to help with page regeneration."
+}
