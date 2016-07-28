@@ -1,6 +1,6 @@
-package cn.com.git.msf.aop.log.aop;
+package cn.com.git.msf.starters.aop.log.aop;
 
-import cn.com.git.msf.aop.log.annotation.LogAop;
+import cn.com.git.msf.starters.aop.log.annotation.LogAop;
 import com.alibaba.fastjson.JSON;
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.Around;
@@ -25,8 +25,8 @@ public class LogAopImpl {
     private final static String SCAN_PACKAGE = "cn.com.git";
 
     @Around("execution(* " + SCAN_PACKAGE + "..*.* (..)) && " +
-            "(@annotation(cn.com.git.msf.aop.log.annotation.LogAop)||" +
-            "@target(cn.com.git.msf.aop.log.annotation.LogAop))")
+            "(@annotation(cn.com.git.msf.starters.aop.log.annotation.LogAop)||" +
+            "@target(cn.com.git.msf.starters.aop.log.annotation.LogAop))")
     public void log(ProceedingJoinPoint joinPoint) throws Throwable {
         Object[] in = joinPoint.getArgs();
         Object out = null;

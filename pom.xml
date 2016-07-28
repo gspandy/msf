@@ -121,6 +121,11 @@
                 <artifactId>msf-rest-starter</artifactId>
                 <version>${msf.version}</version>
             </dependency>
+            <dependency>
+                <groupId>cn.com.git.msf</groupId>
+                <artifactId>msf-aop-log-starter</artifactId>
+                <version>${msf.version}</version>
+            </dependency>
         </dependencies>
     </dependencyManagement>
 

@@ -1,4 +1,4 @@
-package cn.com.git.msf.aop.log.annotation;
+package cn.com.git.msf.starters.aop.log.annotation;
 
 import org.springframework.boot.logging.LogLevel;
 

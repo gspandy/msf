@@ -21,6 +21,7 @@
         <module>msf-samples-auth-stateless</module>
         <module>msf-samples-redis-cluster</module>
         <module>msf-samples-rest</module>
+        <module>msf-samples-aop-log</module>
     </modules>
 
 

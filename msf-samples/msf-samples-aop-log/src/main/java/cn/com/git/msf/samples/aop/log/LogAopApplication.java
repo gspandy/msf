@@ -1,6 +1,6 @@
-package cn.com.git.msf.aop.log;
+package cn.com.git.msf.samples.aop.log;
 
-import cn.com.git.msf.aop.log.service.Test;
+import cn.com.git.msf.samples.aop.log.service.Test;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
