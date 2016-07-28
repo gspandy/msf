@@ -1,5 +1,7 @@
 package cn.com.git.msf.aop.log.annotation;
 
+import org.springframework.boot.logging.LogLevel;
+
 import java.lang.annotation.*;
 
 /**
@@ -10,4 +12,5 @@ import java.lang.annotation.*;
 @Retention(RetentionPolicy.RUNTIME)
 @Documented
 public @interface LogAop {
+    LogLevel logLevel() default LogLevel.DEBUG;
 }

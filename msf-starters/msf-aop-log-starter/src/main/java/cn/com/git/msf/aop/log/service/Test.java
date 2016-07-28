@@ -1,6 +1,7 @@
 package cn.com.git.msf.aop.log.service;
 
 import cn.com.git.msf.aop.log.annotation.LogAop;
+import org.springframework.boot.logging.LogLevel;
 import org.springframework.stereotype.Service;
 
 /**
@@ -8,7 +9,7 @@ import org.springframework.stereotype.Service;
  * @version [版本号, 2016/7/18]
  */
 @Service
-@LogAop
+@LogAop(logLevel = LogLevel.INFO)
 public class Test {
 
     public void print() {
