@@ -13,7 +13,7 @@
     <groupId>cn.com.git.msf</groupId>
     <artifactId>msf</artifactId>
     <packaging>pom</packaging>
-    <version>1.2-SNAPSHOT</version>
+    <version>1.3-SNAPSHOT</version>
     <name>${project.artifactId}</name>
     <description>The msf project is a micro service framework</description>
     <modules>
@@ -26,7 +26,7 @@
         <zkclient.version>0.7</zkclient.version>
         <dubbo.version>2.8.4</dubbo.version>
         <ojdbc6.version>11.2.0.3</ojdbc6.version>
-        <jedis.version>2.8.1</jedis.version>
+        <jedis.version>2.9.0</jedis.version>
         <shiro.version>1.2.3</shiro.version>
         <javassist.version>3.8.1.GA</javassist.version>
         <commons-codec.version>1.8</commons-codec.version>
